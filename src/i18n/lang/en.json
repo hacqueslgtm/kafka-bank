@@ -1,0 +1,11 @@
+{
+  "銀行": "Bank",
+  "身分證": "ID",
+  "帳號": "Account",
+  "密碼": "Password",
+  "登入": "Log in",
+  "使用生物辨識登入": "Use your biometric to login",
+  "忘記密碼？": "Forget password?",
+  "沒有帳號嗎？": "Don't have an account?",
+  "註冊": "Sign up"
+}

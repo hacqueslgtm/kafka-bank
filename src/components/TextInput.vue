@@ -9,15 +9,12 @@ const props = defineProps<{
 
 <template>
   <div class="mb-4">
-    <label class="block mb-2">{{ label }}</label>
-    <input
-      type="text"
-      class="rounded-xl w-full p-3 bg-bank-gray-500 placeholder:text-bank-gray-800 outline-bank-gray-800"
-      :placeholder="label"
-    />
+    <label class="mb-2 block">{{ label }}</label>
+    <input type="text" class="w-full rounded-xl bg-bank-gray-500 p-3 outline-bank-gray-800 placeholder:text-bank-gray-800" :placeholder="label" />
   </div>
 </template>
 
 <style scoped>
 /* 添加一些基本的樣式 */
 </style>
+

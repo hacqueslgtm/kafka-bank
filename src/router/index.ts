@@ -3,6 +3,11 @@ import { createRouter, createWebHistory } from 'vue-router';
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
+    // {
+    //   path: '*',
+    //   name: 'NotFound',
+    //   component: import('@/views/NotFound/NotFound.vue')
+    // },
     {
       path: '/',
       name: 'UserLogin',
@@ -12,3 +17,4 @@ const router = createRouter({
 });
 
 export default router;
+

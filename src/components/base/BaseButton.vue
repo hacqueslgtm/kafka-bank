@@ -27,7 +27,7 @@ const disabled = computed(() => Boolean(attr.disabled) ?? false)
 </script>
 
 <template>
-  <button class="rounded-3xl p-3 font-bold transition-all active:opacity-90" :class="colorClass" :type="props.type" :disabled="disabled">
+  <button class="min-w-24 rounded-3xl p-3 font-bold transition-all active:opacity-90" :class="colorClass" :type="props.type" :disabled="disabled">
     <slot></slot>
   </button>
 </template>

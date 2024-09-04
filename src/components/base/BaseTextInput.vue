@@ -8,6 +8,7 @@ const props = withDefaults(
   defineProps<{
     label?: string
     type?: string
+    placeholder?: string
   }>(),
   {
     type: 'text'
@@ -15,6 +16,7 @@ const props = withDefaults(
 )
 const [modelValue] = defineModel()
 const type = ref(props.type)
+const placeholder = props.placeholder ?? props.label
 
 const attr = useAttrs()
 // 判斷是否要顯示切換按鈕
@@ -32,7 +34,7 @@ const chgType = () => {
     <input
       :type="type"
       class="relative w-full rounded-xl bg-bank-gray-500 p-3 pr-9 outline-bank-gray-800 placeholder:text-bank-gray-800"
-      :placeholder="label"
+      :placeholder="placeholder"
       v-model.trim="modelValue"
     />
     <button type="button" v-if="isSwitchVisible" class="absolute bottom-2 right-2 p-2" @click="chgType">

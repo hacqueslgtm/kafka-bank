@@ -25,7 +25,7 @@ if (import.meta.env) {
 <template>
   <main class="flex flex-1 flex-col">
     <div class="flex-1">
-      <div class="h-md:h-48 h-lg:h-56 mb-4 flex-shrink-0 overflow-hidden rounded-lg h-sm:h-16">
+      <div class="h-md:h-48 h-lg:h-56 mb-4 flex-shrink-0 overflow-hidden h-sm:h-16">
         <img src="@/assets/login-header.svg" class="h-full w-full object-cover" />
       </div>
       <form class="my-4 px-4">

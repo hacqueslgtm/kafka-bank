@@ -12,7 +12,7 @@ const chgLang = (): void => {
 <template>
   <button class="flex items-center" @click="chgLang()">
     <GlobeAsiaAustraliaIcon class="size-6" />
-    <button class="p-1">{{ locale.toUpperCase() }}</button>
+    <button class="w-9 p-1">{{ locale.toUpperCase() }}</button>
   </button>
 </template>
 

@@ -7,4 +7,19 @@
     font-family: 'Manrope', sans-serif;
     color: #121417;
   }
+
+  .custom-swiper-pagination {
+    position: relative;
+    bottom: 0;
+    text-align: center;
+  }
+
+  .custom-swiper-pagination .swiper-pagination-bullet {
+    @apply bg-bank-gray-800;
+  }
+
+  .custom-swiper-pagination .swiper-pagination-bullet-active {
+    @apply bg-black;
+  }
 }
+

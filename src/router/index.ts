@@ -17,6 +17,18 @@ const router = createRouter({
   },
   routes: [
     {
+      path: '/:pathMatch(.*)*',
+      redirect: { name: 'NotFound' }
+    },
+    {
+      path: '/404',
+      name: 'NotFound',
+      components: {
+        header: () => import('@/views/NotFound/components/NotFoundHeader.vue'),
+        default: () => import('@/views/NotFound/NotFound.vue')
+      }
+    },
+    {
       path: '/',
       redirect: () => {
         if (useAppStore().isFirstUsed) return { name: 'Onboarding' }

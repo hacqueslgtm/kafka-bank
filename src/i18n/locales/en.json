@@ -15,5 +15,12 @@
   "使用生物辨識登入": "Use your biometric to login",
   "忘記密碼？": "Forget password?",
   "沒有帳號嗎？": "Don't have an account?",
-  "註冊": "Sign up"
+  "註冊": "Sign up",
+  "找不到頁面": "Page Not Found",
+  "您正在尋找的頁面無法使用": "The page you're looking for is not available.",
+  "請檢查網址並重試": "Please check the URL and try again.",
+  "隱私政策": "Privacy Policy",
+  "條款和條件": "Terms and Conditions",
+  "上一頁": "Go Back",
+  "回登入頁": "Return to Login"
 }

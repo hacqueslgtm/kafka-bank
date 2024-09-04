@@ -56,12 +56,12 @@ const toRegister = () => {
 <template>
   <main class="flex flex-1 flex-col">
     <div class="flex-1">
-      <div class="aspect-auto h-80 overflow-hidden h-sm:h-16">
+      <div class="aspect-auto h-80 overflow-hidden h-sm:h-64">
         <FadeTransition>
-          <Img v-if="swiperActIndex === 0" src="@/src/assets/onboarding-header-1.svg" class="h-full w-full object-cover" />
-          <Img v-else-if="swiperActIndex === 1" src="@/src/assets/onboarding-header-2.jpeg" class="h-full w-full object-cover" />
-          <Img v-else-if="swiperActIndex === 2" src="@/src/assets/onboarding-header-3.jpeg" class="h-full w-full object-cover" />
-          <Img v-else src="@/src/assets/onboarding-header-4.jpeg" class="h-full w-full object-cover" />
+          <Img v-if="swiperActIndex === 0" src="@/assets/onboarding-header-1.svg" class="h-full w-full object-cover" />
+          <Img v-else-if="swiperActIndex === 1" src="@/assets/onboarding-header-2.jpeg" class="h-full w-full object-cover" />
+          <Img v-else-if="swiperActIndex === 2" src="@/assets/onboarding-header-3.jpeg" class="h-full w-full object-cover" />
+          <Img v-else src="@/assets/onboarding-header-4.jpeg" class="h-full w-full object-cover" />
         </FadeTransition>
       </div>
       <div class="h-fit py-4">

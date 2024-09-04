@@ -6,7 +6,7 @@ const props = defineProps<{
   class: string
 }>()
 
-const fmtSrc = props.src.slice(1)
+const fmtSrc = `/src${props.src.slice(1)}`
 const imgSrc = computed(() => {
   return new URL(`${fmtSrc}`, import.meta.url).href
 })

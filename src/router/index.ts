@@ -1,20 +1,30 @@
-import { createRouter, createWebHistory } from 'vue-router';
+import { createRouter, createWebHistory } from 'vue-router'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
+  scrollBehavior(to) {
+    if (to.hash) {
+      return {
+        el: to.hash,
+        behavior: 'smooth'
+      }
+    }
+    return {
+      top: 0,
+      behavior: 'smooth'
+    }
+  },
   routes: [
-    // {
-    //   path: '*',
-    //   name: 'NotFound',
-    //   component: import('@/views/NotFound/NotFound.vue')
-    // },
     {
       path: '/',
       name: 'UserLogin',
-      component: import('@/views/UserLogin/UserLogin.vue')
+      components: {
+        header: () => import('@/views/UserLogin/components/UserLoginHeader.vue'),
+        default: () => import('@/views/UserLogin/UserLogin.vue')
+      }
     }
   ]
-});
+})
 
-export default router;
+export default router
 

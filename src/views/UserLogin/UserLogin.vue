@@ -1,5 +1,6 @@
 <script lang="ts" setup>
 import { BellIcon, ArrowRightIcon } from '@heroicons/vue/24/outline'
+import Button from '@/components/base/BaseButton.vue' // 引入 Button 組件
 import TextInput from '@/components/TextInput.vue' // 引入 TextInput 組件
 import SwitchLang from '@/components/SwitchLang.vue'
 </script>
@@ -20,9 +21,7 @@ import SwitchLang from '@/components/SwitchLang.vue'
         <TextInput :label="$t('身分證')" />
         <TextInput :label="$t('帳號')" />
         <TextInput :label="$t('密碼')" />
-        <button class="my-2 w-full rounded-3xl bg-bank-blue-500 p-3 text-white">
-          {{ $t('登入') }}
-        </button>
+        <Button class="w-full" :color="'primary'">{{ $t('登入') }}</Button>
       </form>
       <section class="my-4 px-4">
         <button class="my-2 flex w-full justify-between">

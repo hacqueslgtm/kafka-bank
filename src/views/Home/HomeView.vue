@@ -6,9 +6,9 @@ import HomeAnalysis from './components/HomeAnalysis.vue'
 
 <template>
   <div>
-    <HomeAnalysis />
     <HomeAcct />
     <HomeCard />
+    <HomeAnalysis />
   </div>
 </template>
 

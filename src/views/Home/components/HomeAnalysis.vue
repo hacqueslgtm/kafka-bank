@@ -9,7 +9,6 @@ echarts.use([LineChart, GridComponent, DatasetComponent, TransformComponent, Can
 
 const chartDom = ref<HTMLElement>()
 const useLineChart = (element: HTMLElement) => {
-  console.log(element)
   const chart = echarts.init(element)
   const option = {
     xAxis: {

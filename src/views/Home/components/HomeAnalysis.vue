@@ -34,7 +34,7 @@ const observer = new IntersectionObserver(
   entries => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
-        useLineChart(chartDom.value)
+        chartDom.value && useLineChart(chartDom.value)
         observer.unobserve(entry.target)
       }
     })

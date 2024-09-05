@@ -10,7 +10,6 @@ import {
 import { computed, ref } from 'vue'
 import { useI18n } from 'vue-i18n'
 import { useRouter, useRoute } from 'vue-router'
-import FadeTransition from '../transition/FadeTransition.vue'
 
 const { t } = useI18n()
 const navLinks = computed(() => {

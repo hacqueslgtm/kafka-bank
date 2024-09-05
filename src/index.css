@@ -6,6 +6,7 @@
   * {
     font-family: 'Manrope', sans-serif;
     color: #121417;
+    @apply font-medium;
   }
 
   .custom-swiper-pagination {

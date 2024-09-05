@@ -38,6 +38,26 @@
     "向朋友轉帳": "Send money to a friend",
     "簡單又免費": "It's free and easy",
     "明細查詢": "Transaction history",
-    "擷取你查詢的明細": "Retrieve your requested transaction details"
+    "查看最近的交易紀錄": "View Recent Transactions",
+    "信用卡": "Credit Card",
+    "當期應繳金額": "Current Amount Due",
+    "未出帳金額": "Unbilled Amount",
+    "查看卡片": "Check Cards",
+    "繳款": "Payment",
+    "帳單明細查詢": "View Recent Bills",
+    "查看已出帳明細": "View Billed Details",
+    "未出帳明細查詢": "Unbilled Details Query",
+    "消費趨勢": "Spend Trends",
+    "花費": "Spending",
+    "支出": "Outcome",
+    "收入": "Income",
+    "最近30天": "Last 30 Days",
+    "最近7天": "Last 7 Days",
+    "最近1個月": "Last 1 Month"
+  },
+  "使用者": {
+    "個人資料": "Profile",
+    "設定": "Settings",
+    "登出": "Log out"
   }
 }

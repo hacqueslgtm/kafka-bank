@@ -9,7 +9,7 @@ const goUser = () => {
 </script>
 
 <template>
-  <header class="flex h-[69px] justify-between overflow-hidden p-4">
+  <header class="sticky top-0 flex h-[69px] flex-shrink-0 justify-between overflow-hidden bg-white p-4">
     <button class="mx-1 p-1">
       <BellIcon class="size-7" />
     </button>

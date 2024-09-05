@@ -82,6 +82,18 @@ const routes: RouteRecord[] = [
       requiresAuth: true,
       highlight: 'Card'
     }
+  },
+  {
+    path: '/user',
+    name: 'User',
+    components: {
+      default: () => import('@/views/User/User.vue'),
+      footer: () => import('@/components/layout/Navigator.vue')
+    },
+    meta: {
+      requiresAuth: true,
+      highlight: 'User'
+    }
   }
 ]
 

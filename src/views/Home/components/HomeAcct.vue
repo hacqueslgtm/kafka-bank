@@ -15,7 +15,7 @@ const linkList = [
   {
     icon: ArrowDownTrayIcon,
     title: t('首頁.明細查詢'),
-    subtitle: t('首頁.擷取你查詢的明細'),
+    subtitle: t('首頁.查看最近的交易紀錄'),
     path: 'History'
   }
 ]

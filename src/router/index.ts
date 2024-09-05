@@ -1,4 +1,4 @@
-import { createRouter, createWebHistory } from 'vue-router'
+import { createRouter, createWebHistory, type RouteRecordRaw } from 'vue-router'
 import { useAppStore } from '@/stores/appStore'
 
 interface RouteMeta {
@@ -127,8 +127,7 @@ const router = createRouter({
       behavior: 'smooth'
     }
   },
-  routes
+  routes: routes as RouteRecordRaw[]
 })
 
 export default router
-

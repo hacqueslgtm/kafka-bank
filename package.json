@@ -19,14 +19,14 @@
     "@heroicons/vue": "^2.1.5",
     "@vueuse/core": "^11.0.3",
     "apexcharts": "^3.53.0",
+    "echarts": "^5.5.1",
     "mitt": "^3.0.1",
     "pinia": "^2.2.2",
     "swiper": "^11.1.12",
     "tailwind": "^4.0.0",
     "vue": "^3.4.29",
     "vue-i18n": "^9.14.0",
-    "vue-router": "^4.3.3",
-    "vue3-apexcharts": "^1.6.0"
+    "vue-router": "^4.3.3"
   },
   "devDependencies": {
     "@chromatic-com/storybook": "^1.8.0",

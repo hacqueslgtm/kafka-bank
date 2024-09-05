@@ -22,5 +22,22 @@
   "隱私政策": "Privacy Policy",
   "條款和條件": "Terms and Conditions",
   "上一頁": "Go Back",
-  "回登入頁": "Return to Login"
+  "回登入頁": "Return to Login",
+  "導覽列": {
+    "首頁": "Home",
+    "銀行帳號": "Accounts",
+    "信用卡": "Cards",
+    "投資": "Invest",
+    "個人": "Me"
+  },
+  "首頁": {
+    "現金": "Money",
+    "現金餘額": "Case Balance",
+    "查看帳號": "Check Acct.",
+    "提款": "Case Out",
+    "向朋友轉帳": "Send money to a friend",
+    "簡單又免費": "It's free and easy",
+    "明細查詢": "Transaction history",
+    "擷取你查詢的明細": "Retrieve your requested transaction details"
+  }
 }

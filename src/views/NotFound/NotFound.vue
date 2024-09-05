@@ -10,7 +10,7 @@ const goBack = () => {
 }
 
 const goLogin = () => {
-  router.push({ name: 'UserLogin' })
+  router.push({ name: 'Login' })
 }
 </script>
 

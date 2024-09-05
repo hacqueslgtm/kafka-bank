@@ -4,14 +4,15 @@ import Button from '@/components/base/BaseButton.vue' // 引入 Button 組件
 import TextInput from '@/components/base/BaseTextInput.vue' // 引入 TextInput 組件
 import SwitchLang from '@/components/SwitchLang.vue'
 import { reactive } from 'vue'
+import { useRouter } from 'vue-router'
 
-interface UserLogin {
+interface LoginForm {
   id: string
   account: string
   password: string
 }
 
-const user = reactive<UserLogin>({
+const user = reactive<LoginForm>({
   id: '',
   account: '',
   password: ''
@@ -19,6 +20,11 @@ const user = reactive<UserLogin>({
 
 if (import.meta.env) {
   ;(user.id = 'T224095135A'), (user.account = 'admin'), (user.password = 'admin')
+}
+
+const router = useRouter()
+const login = () => {
+  router.push('/home')
 }
 </script>
 
@@ -32,7 +38,7 @@ if (import.meta.env) {
         <TextInput :label="$t('身分證')" v-model="user.id" />
         <TextInput :type="'password'" :label="$t('帳號')" v-model="user.account" switch-visible />
         <TextInput :type="'password'" :label="$t('密碼')" v-model="user.password" switch-visible />
-        <Button class="w-full" :color="'primary'">{{ $t('登入') }}</Button>
+        <Button class="w-full" :color="'primary'" @click="login">{{ $t('登入') }}</Button>
       </form>
       <section class="my-4 px-4">
         <button class="my-2 flex w-full justify-between transition-all active:opacity-90">

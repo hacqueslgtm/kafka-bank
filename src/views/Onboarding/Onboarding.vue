@@ -46,7 +46,7 @@ const onSlideChange = (swiper: any) => {
 
 const router = useRouter()
 const toLogin = () => {
-  router.push({ name: 'UserLogin' })
+  router.push({ name: 'Login' })
 }
 const toRegister = () => {
   router.push('/register')

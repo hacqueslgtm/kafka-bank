@@ -3,7 +3,7 @@ import FadeTransition from './components/transition/FadeTransition.vue'
 </script>
 
 <template>
-  <div class="flex h-screen flex-col">
+  <div class="fixed flex h-screen w-full flex-col">
     <RouterView name="header" v-slot="{ Component }">
       <FadeTransition>
         <Component :is="Component" />

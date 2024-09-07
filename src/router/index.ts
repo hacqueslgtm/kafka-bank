@@ -1,16 +1,12 @@
 import { createRouter, createWebHistory, type RouteRecordRaw } from 'vue-router'
 import { useAppStore } from '@/stores/appStore'
-
-interface RouteMeta {
-  title?: string
-  requiresAuth: boolean
-  highlight?: 'Home' | 'Account' | 'Card' | 'Invest' | 'User'
-}
-
-interface RouteRecord {
-  meta?: RouteMeta
-  [key: string]: any
-}
+import type { RouteRecord } from '@/types/router.types'
+import { homeRoutes } from './routes/home'
+import { loginRoutes } from './routes/login'
+import { errorRoutes } from './routes/error'
+import { userRoutes } from './routes/user'
+import { cardRoutes } from './routes/card'
+import { accountRoutes } from './routes/account'
 
 const routes: RouteRecord[] = [
   {
@@ -46,71 +42,12 @@ const routes: RouteRecord[] = [
       requiresAuth: false
     }
   },
-  {
-    path: '/login',
-    name: 'Login',
-    components: {
-      header: () => import('@/views/Login/components/LoginHeader.vue'),
-      default: () => import('@/views/Login/Login.vue')
-    },
-    meta: {
-      requiresAuth: false
-    }
-  },
-  {
-    path: '/home',
-    name: 'Home',
-    components: {
-      header: () => import('@/components/layout/Header.vue'),
-      default: () => import('@/views/Home/HomeView.vue'),
-      footer: () => import('@/components/layout/Navigator.vue')
-    },
-    meta: {
-      requiresAuth: true,
-      highlight: 'Home'
-    }
-  },
-  {
-    path: '/cards',
-    name: 'Card',
-    components: {
-      // header: () => import('@/views/Card/components/CardViewHeader.vue'),
-      default: () => import('@/views/Card/Card.vue'),
-      footer: () => import('@/components/layout/Navigator.vue')
-    },
-    meta: {
-      requiresAuth: true,
-      highlight: 'Card'
-    }
-  },
-  {
-    path: '/user',
-    name: 'User',
-    components: {
-      default: () => import('@/views/User/User.vue'),
-      footer: () => import('@/components/layout/Navigator.vue')
-    },
-    meta: {
-      requiresAuth: true,
-      highlight: 'User'
-    }
-  },
-  {
-    path: '/Account',
-    name: 'Account',
-    components: {
-      header: () => import('@/components/layout/Header.vue'),
-      default: () => import('@/views/Account/Account.vue'),
-      footer: () => import('@/components/layout/Navigator.vue')
-    },
-    props: {
-      header: { title: 'Accounts' }
-    },
-    meta: {
-      requiresAuth: true,
-      highlight: 'Account'
-    }
-  }
+  ...homeRoutes,
+  ...loginRoutes,
+  ...errorRoutes,
+  ...userRoutes,
+  ...cardRoutes,
+  ...accountRoutes
 ]
 
 const router = createRouter({
@@ -130,4 +67,8 @@ const router = createRouter({
   routes: routes as RouteRecordRaw[]
 })
 
+import { setupRouterGuards } from './guards'
+setupRouterGuards(router)
+
 export default router
+

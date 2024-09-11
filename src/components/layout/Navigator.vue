@@ -14,11 +14,11 @@ import { useRouter, useRoute } from 'vue-router'
 const { t } = useI18n()
 const navLinks = computed(() => {
   return [
-    { icon: HomeIcon, activeIcon: HomeIconSolid, name: 'Home', label: t('導覽列.首頁') },
-    { icon: BuildingLibraryIcon, activeIcon: BuildingLibraryIconSolid, name: 'Account', label: t('導覽列.銀行帳號') },
-    { icon: BanknotesIcon, activeIcon: BanknotesIconSolid, name: 'Card', label: t('導覽列.信用卡') },
-    { icon: ChartBarIcon, activeIcon: ChartBarIconSolid, name: 'Invest', label: t('導覽列.投資') },
-    { icon: UserCircleIcon, activeIcon: UserCircleIconSolid, name: 'User', label: t('導覽列.個人') }
+    { icon: HomeIcon, activeIcon: HomeIconSolid, name: 'Home', label: t('首頁') },
+    { icon: BuildingLibraryIcon, activeIcon: BuildingLibraryIconSolid, name: 'Account', label: t('銀行帳號') },
+    { icon: BanknotesIcon, activeIcon: BanknotesIconSolid, name: 'Card', label: t('信用卡') },
+    { icon: ChartBarIcon, activeIcon: ChartBarIconSolid, name: 'Invest', label: t('投資') },
+    { icon: UserCircleIcon, activeIcon: UserCircleIconSolid, name: 'User', label: t('個人') }
   ]
 })
 

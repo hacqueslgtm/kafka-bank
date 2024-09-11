@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import { defineProps, ref, useAttrs } from 'vue'
+import { ref, useAttrs } from 'vue'
 import { EyeIcon, EyeSlashIcon } from '@heroicons/vue/24/outline'
 import FadeTransition from '../transition/FadeTransition.vue'
 

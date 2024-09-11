@@ -11,7 +11,7 @@ const logout = () => {
 
 <template>
   <div>
-    <Button @click="logout">{{ $t('使用者.登出') }}</Button>
+    <Button @click="logout">{{ $t('登出') }}</Button>
   </div>
 </template>
 

@@ -24,8 +24,8 @@ const routes: RouteRecord[] = [
     path: '/404',
     name: 'NotFound',
     components: {
-      header: () => import('@/views/NotFound/components/NotFoundHeader.vue'),
-      default: () => import('@/views/NotFound/NotFound.vue')
+      header: () => import('@/views/error/components/NotFoundHeader.vue'),
+      default: () => import('@/views/error/NotFound.vue')
     },
     meta: {
       requiresAuth: false
@@ -35,8 +35,8 @@ const routes: RouteRecord[] = [
     path: '/onboarding',
     name: 'Onboarding',
     components: {
-      header: () => import('@/views/Onboarding/components/OnboardingHeader.vue'),
-      default: () => import('@/views/Onboarding/Onboarding.vue')
+      header: () => import('@/views/welcome/components/WelcomeHeader.vue'),
+      default: () => import('@/views/welcome/Welcome.vue')
     },
     meta: {
       requiresAuth: false

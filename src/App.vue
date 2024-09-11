@@ -1,7 +1,8 @@
 <script setup lang="ts">
 import { useRoute } from 'vue-router'
 import FadeTransition from './components/transition/FadeTransition.vue'
-import { ref, watch } from 'vue'
+import { onBeforeMount, ref, watch } from 'vue'
+import { useI18n } from 'vue-i18n'
 
 const route = useRoute()
 const hasFooter = ref(false)

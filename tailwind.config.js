@@ -28,6 +28,8 @@ export default {
         },
         'bank-gray': {
           500: '#F0F2F5',
+          600: '#E5E8EB',
+          700: '#DBE0E5',
           800: '#637587',
         }
       }

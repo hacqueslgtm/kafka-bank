@@ -8,7 +8,7 @@ const i18n = useI18n()
 const { locale, messages } = i18n
 
 const chgLang = async (): Promise<void> => {
-  const targetLocale = locale.value === 'en-US' ? 'zh-TW' : 'en-US'
+  const targetLocale = locale.value === 'en' ? 'tw' : 'en'
 
   if (!Object.keys(messages.value[targetLocale]).length) {
     try {

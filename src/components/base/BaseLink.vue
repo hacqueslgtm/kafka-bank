@@ -16,8 +16,8 @@ const props = defineProps<{
       <component :is="props.icon" class="h-6 w-6" />
     </div>
     <div>
-      <p>{{ props.title }}</p>
-      <p class="text-sm text-bank-gray-800">{{ props.subtitle }}</p>
+      <p>{{ $t(props.title) }}</p>
+      <p class="text-sm text-bank-gray-800">{{ $t(props.subtitle) }}</p>
     </div>
     <div>
       <ChevronRightIcon class="h-6 w-6" />

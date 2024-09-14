@@ -18,17 +18,16 @@ watch(
 <template>
   <div class="fixed flex h-screen w-full flex-col">
     <div class="flex h-full flex-col overflow-auto" :class="{ 'max-h-[calc(100vh_-_5.5rem)]': hasFooter }">
-      <RouterView name="header" v-slot="{ Component }">
-        <FadeTransition>
+      <FadeTransition>
+        <RouterView name="header" v-slot="{ Component }">
           <Component :is="Component" />
-        </FadeTransition>
-      </RouterView>
-
-      <RouterView v-slot="{ Component }">
-        <FadeTransition>
+        </RouterView>
+      </FadeTransition>
+      <FadeTransition>
+        <RouterView v-slot="{ Component }">
           <Component :is="Component" />
-        </FadeTransition>
-      </RouterView>
+        </RouterView>
+      </FadeTransition>
     </div>
   </div>
   <RouterView name="footer" />

@@ -8,14 +8,14 @@ const { t } = useI18n()
 const linkList = [
   {
     icon: ArrowUpRightIcon,
-    title: t('向朋友轉帳'),
-    subtitle: t('簡單又免費'),
+    title: '向朋友轉帳',
+    subtitle: '簡單又免費',
     path: 'Transfer'
   },
   {
     icon: ArrowDownTrayIcon,
-    title: t('明細查詢'),
-    subtitle: t('查看最近的交易紀錄'),
+    title: '明細查詢',
+    subtitle: '查看最近的交易紀錄',
     path: 'History'
   }
 ]

@@ -1,4 +1,8 @@
 {
+  "compilerOptions": {
+    "noImplicitAny": true,
+    "strictNullChecks": true
+  },
   "files": [],
   "references": [
     {
@@ -12,3 +16,4 @@
     }
   ]
 }
+

@@ -32,8 +32,8 @@ const routes: RouteRecord[] = [
     }
   },
   {
-    path: '/onboarding',
-    name: 'Onboarding',
+    path: '/welcome',
+    name: 'Welcome',
     components: {
       header: () => import('@/views/welcome/components/WelcomeHeader.vue'),
       default: () => import('@/views/welcome/Welcome.vue')

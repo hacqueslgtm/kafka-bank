@@ -4,6 +4,9 @@
   "支票": "Check",
   "定存": "CD",
   "貸款": "Loan",
-  "目前/可用餘額": "Current / Available Balance",
+  "可用總餘額": "Total Avail. Bal.",
+  "總餘額": "Total Bal.",
+  "可用餘額": "Avail. Bal.",
+  "餘額": "Bal.",
   "快速功能": "Quick Actions"
 }

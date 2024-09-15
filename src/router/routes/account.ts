@@ -50,6 +50,38 @@ export const accountRoutes: RouteRecord[] = [
         component: () => import('@/views/account/LoanAcct/LoanAcct.vue')
       }
     ]
+  },
+  {
+    path: '/account/ntd-account/overview/:id',
+    name: 'NtdAcctDash',
+    props: {
+      header: () => {
+        const { t } = useI18n()
+        return {
+          title: t('帳戶總覽')
+        }
+      }
+    },
+    components: {
+      header: () => import('@/components/layout/NavigationHeader.vue'),
+      default: () => import('@/views/account/NtdAcctDash/NtdAcctDash.vue')
+    }
+  },
+  {
+    path: '/account/ntd-account/detail/:id',
+    name: 'NtdAcctDetail',
+    props: {
+      header: () => {
+        const { t } = useI18n()
+        return {
+          title: t('帳戶詳情')
+        }
+      }
+    },
+    components: {
+      header: () => import('@/components/layout/NavigationHeader.vue'),
+      default: () => import('@/views/account/NtdAcctDetail/NtdAcctDetail.vue')
+    }
   }
 ]
 

@@ -215,7 +215,10 @@ const goLink = () => {
       <BaseButton>{{ $t('分享') }}</BaseButton>
     </div>
     <section class="my-6">
+      <!-- TODO 標題右邊新增提示訊息: 最多可查詢一年 -->
       <h1 class="mb-4 text-2xl font-bold">{{ $t('轉帳明細') }}</h1>
+      <!-- TODO 篩選功能 照月份篩選 及 轉出/轉入 如果是當月份的話要及時打交易 其他月份可以存起來-->
+      <!-- TODO 一次查詢一個月 下滑到最下面自動打下一個月的交易 要有loading動畫 -->
       <TranRecord v-for="(record, index) in tranRecord" :key="index" v-bind="record" />
     </section>
   </div>

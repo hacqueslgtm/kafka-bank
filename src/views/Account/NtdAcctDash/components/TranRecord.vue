@@ -23,4 +23,3 @@ const props = defineProps<{
     <ChevronRightIcon class="h-6 w-6" />
   </div>
 </template>
-

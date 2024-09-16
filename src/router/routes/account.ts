@@ -52,7 +52,7 @@ export const accountRoutes: RouteRecord[] = [
     ]
   },
   {
-    path: '/account/ntd-account/overview/:id',
+    path: '/account/ntd-account/overview/:acct',
     name: 'NtdAcctDash',
     props: {
       header: () => {
@@ -68,7 +68,7 @@ export const accountRoutes: RouteRecord[] = [
     }
   },
   {
-    path: '/account/ntd-account/detail/:id',
+    path: '/account/ntd-account/detail/:acct',
     name: 'NtdAcctDetail',
     props: {
       header: () => {

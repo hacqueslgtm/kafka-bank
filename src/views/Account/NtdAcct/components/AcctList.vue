@@ -11,7 +11,7 @@ const props = defineProps<{
 
 const router = useRouter()
 const goLink = () => {
-  router.push({ name: 'NtdAcctDash', params: { id: btoa(props.acct) } })
+  router.push({ name: 'NtdAcctDash', params: { acct: btoa(props.acct) } })
 }
 </script>
 

@@ -6,8 +6,8 @@ import TranRecord from './components/TranRecord.vue'
 
 const route = useRoute()
 
-const idParam = route.params.id
-const id = Array.isArray(idParam) ? atob(idParam[0]) : atob(idParam)
+const acctParam = route.params.acct
+const acct = Array.isArray(acctParam) ? atob(acctParam[0]) : atob(acctParam)
 
 const tranRecord = [
   {
@@ -194,14 +194,14 @@ const tranRecord = [
 
 const router = useRouter()
 const goLink = () => {
-  router.push({ name: 'NtdAcctDetail', params: { id: btoa(id) } })
+  router.push({ name: 'NtdAcctDetail', params: { id: btoa(acct) } })
 }
 </script>
 
 <template>
   <div class="h-[calc(100vh_-_70px)] min-h-[calc(100vh_-_70px)] overflow-y-auto p-4">
     <div class="mb-8 mt-2 flex justify-between">
-      <h1 class="text-3xl font-bold">{{ id }}</h1>
+      <h1 class="text-3xl font-bold">{{ acct }}</h1>
       <button class="p-2" @click="goLink">
         <EllipsisVerticalIcon class="h-6 w-6" />
       </button>

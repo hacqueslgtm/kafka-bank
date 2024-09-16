@@ -14,181 +14,133 @@ const tranRecord = [
     date: '2024/09/01 09:15:30',
     type: '+',
     amount: 5000,
+    balance: 10000,
     fromAccount: '092-174-92857',
     toAccount: '081-234-56789',
+    toBank: '803',
     description: '薪資入帳',
     tag: '收入'
   },
   {
-    date: '2024/09/03 14:30:45',
+    date: '2024/09/03 14:22:45',
     type: '-',
     amount: 1200,
+    balance: 8800,
     fromAccount: '081-234-56789',
-    toAccount: '076-528-97531',
-    description: '房租',
-    tag: '住宿'
+    toAccount: '076-543-21098',
+    toBank: '012',
+    description: '餐廳消費',
+    tag: '飲食'
   },
   {
-    date: '2024/09/05 10:20:15',
-    type: '-',
-    amount: 500,
-    fromAccount: '081-234-56789',
-    toAccount: '012-345-67890',
-    description: '電費',
-    tag: '水電'
-  },
-  {
-    date: '2024/09/07 16:45:00',
-    type: '+',
-    amount: 2000,
-    fromAccount: '092-174-92857',
-    toAccount: '081-234-56789',
-    description: '退稅',
-    tag: '其他收入'
-  },
-  {
-    date: '2024/09/10 11:30:20',
-    type: '-',
-    amount: 800,
-    fromAccount: '081-234-56789',
-    toAccount: '135-792-46800',
-    description: '購物',
-    tag: '消費'
-  },
-  {
-    date: '2024/09/12 09:05:40',
-    type: '-',
-    amount: 300,
-    fromAccount: '081-234-56789',
-    toAccount: '246-813-57900',
-    description: '水費',
-    tag: '水電'
-  },
-  {
-    date: '2024/09/15 15:20:10',
-    type: '+',
-    amount: 1500,
-    fromAccount: '092-174-92857',
-    toAccount: '081-234-56789',
-    description: '兼職收入',
-    tag: '收入'
-  },
-  {
-    date: '2024/09/18 13:40:30',
-    type: '-',
-    amount: 600,
-    fromAccount: '081-234-56789',
-    toAccount: '159-753-26800',
-    description: '手機費',
-    tag: '通訊'
-  },
-  {
-    date: '2024/09/20 10:10:50',
-    type: '-',
-    amount: 1000,
-    fromAccount: '081-234-56789',
-    toAccount: '753-951-85200',
-    description: '保險費',
-    tag: '保險'
-  },
-  {
-    date: '2024/09/22 17:30:25',
+    date: '2024/09/05 11:30:00',
     type: '+',
     amount: 3000,
-    fromAccount: '092-174-92857',
+    balance: 11800,
+    fromAccount: '065-987-65432',
     toAccount: '081-234-56789',
+    toBank: '803',
     description: '投資收益',
     tag: '投資'
   },
   {
-    date: '2024/09/25 12:50:15',
+    date: '2024/09/07 16:45:20',
     type: '-',
-    amount: 700,
+    amount: 2500,
+    balance: 9300,
     fromAccount: '081-234-56789',
-    toAccount: '963-852-74100',
-    description: '餐飲',
-    tag: '飲食'
+    toAccount: '054-321-09876',
+    toBank: '700',
+    description: '購物消費',
+    tag: '購物'
   },
   {
-    date: '2024/09/27 08:45:30',
-    type: '-',
-    amount: 400,
-    fromAccount: '081-234-56789',
-    toAccount: '741-852-96300',
-    description: '交通費',
-    tag: '交通'
-  },
-  {
-    date: '2024/09/29 16:15:40',
+    date: '2024/09/10 08:00:15',
     type: '+',
-    amount: 1200,
-    fromAccount: '092-174-92857',
+    amount: 10000,
+    balance: 19300,
+    fromAccount: '098-765-43210',
     toAccount: '081-234-56789',
-    description: '銷售佣金',
+    toBank: '803',
+    description: '獎金入帳',
     tag: '收入'
   },
   {
-    date: '2024/10/01 09:30:00',
+    date: '2024/09/12 10:30:45',
     type: '-',
-    amount: 2000,
+    amount: 3500,
+    balance: 15800,
     fromAccount: '081-234-56789',
-    toAccount: '357-159-26840',
-    description: '學費',
-    tag: '教育'
+    toAccount: '123-456-78901',
+    toBank: '822',
+    description: '租金支付',
+    tag: '住宿'
   },
   {
-    date: '2024/10/03 14:20:35',
-    type: '+',
-    amount: 4000,
-    fromAccount: '092-174-92857',
-    toAccount: '081-234-56789',
-    description: '獎金',
-    tag: '收入'
-  },
-  {
-    date: '2024/10/05 11:10:50',
+    date: '2024/09/15 18:20:00',
     type: '-',
-    amount: 900,
+    amount: 800,
+    balance: 15000,
     fromAccount: '081-234-56789',
-    toAccount: '753-159-26840',
-    description: '健身會費',
+    toAccount: '234-567-89012',
+    toBank: '007',
+    description: '健身房月費',
     tag: '健康'
   },
   {
-    date: '2024/10/07 15:40:20',
-    type: '-',
-    amount: 600,
-    fromAccount: '081-234-56789',
-    toAccount: '159-357-26840',
-    description: '書籍',
-    tag: '教育'
-  },
-  {
-    date: '2024/10/10 10:05:30',
+    date: '2024/09/18 09:45:30',
     type: '+',
-    amount: 1800,
-    fromAccount: '092-174-92857',
+    amount: 2000,
+    balance: 17000,
+    fromAccount: '345-678-90123',
     toAccount: '081-234-56789',
-    description: '退款',
-    tag: '其他收入'
+    toBank: '803',
+    description: '兼職收入',
+    tag: '收入'
   },
   {
-    date: '2024/10/12 13:25:45',
+    date: '2024/09/20 13:15:10',
     type: '-',
     amount: 1500,
+    balance: 15500,
     fromAccount: '081-234-56789',
-    toAccount: '951-357-26840',
-    description: '醫療費用',
-    tag: '健康'
+    toAccount: '456-789-01234',
+    toBank: '050',
+    description: '電子產品購買',
+    tag: '購物'
   },
   {
-    date: '2024/10/15 09:50:15',
+    date: '2024/09/23 11:00:00',
     type: '+',
-    amount: 6000,
-    fromAccount: '092-174-92857',
+    amount: 4000,
+    balance: 19500,
+    fromAccount: '567-890-12345',
     toAccount: '081-234-56789',
-    description: '薪資入帳',
-    tag: '收入'
+    toBank: '803',
+    description: '股息收入',
+    tag: '投資'
+  },
+  {
+    date: '2024/09/25 20:30:25',
+    type: '-',
+    amount: 1000,
+    balance: 18500,
+    fromAccount: '081-234-56789',
+    toAccount: '678-901-23456',
+    toBank: '118',
+    description: '網購服裝',
+    tag: '購物'
+  },
+  {
+    date: '2024/09/28 15:40:50',
+    type: '-',
+    amount: 2200,
+    balance: 16300,
+    fromAccount: '081-234-56789',
+    toAccount: '789-012-34567',
+    toBank: '812',
+    description: '水電費支付',
+    tag: '生活費用'
   }
 ]
 

@@ -27,5 +27,15 @@
   "單筆": "Single",
   "每日": "Daily",
   "每月": "Monthly",
-  "ATM提款限額": "ATM Withdrawal Limit"
+  "ATM提款限額": "ATM Withdrawal Limit",
+  "交易明細": "Transaction Details",
+  "轉帳資訊": "Transfer Info",
+  "轉帳說明": "Transfer Description",
+  "日期": "Date",
+  "金額": "Amount",
+  "轉出帳號": "From",
+  "轉入帳號": "To",
+  "轉入銀行": "To Bank",
+  "類型": "Type",
+  "備註": "Description"
 }

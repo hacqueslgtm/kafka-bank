@@ -82,6 +82,22 @@ export const accountRoutes: RouteRecord[] = [
       header: () => import('@/components/layout/NavigationHeader.vue'),
       default: () => import('@/views/account/NtdAcctDetail/NtdAcctDetail.vue')
     }
+  },
+  {
+    path: '/account/ntd-account/tran-detail/:data',
+    name: 'NtdTranDetail',
+    props: {
+      header: () => {
+        const { t } = useI18n()
+        return {
+          title: t('交易明細')
+        }
+      }
+    },
+    components: {
+      header: () => import('@/components/layout/NavigationHeader.vue'),
+      default: () => import('@/views/account/NtdTranDetail/NtdTranDetail.vue')
+    }
   }
 ]
 

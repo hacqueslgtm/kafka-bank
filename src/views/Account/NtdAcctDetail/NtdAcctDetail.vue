@@ -17,7 +17,7 @@ const acctInfo = {
 }
 
 const tranLimit = {
-  status: 1,
+  status: true,
   dailyLimit: 500000,
   monthlyLimit: 1000000,
   dailyLimitRemain: 500000,

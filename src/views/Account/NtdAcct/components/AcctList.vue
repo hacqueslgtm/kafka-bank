@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { ChevronRightIcon } from '@heroicons/vue/24/outline'
 import { useRouter } from 'vue-router'
+import { encrypt } from '@/utils'
 
 const props = defineProps<{
   acct: string
@@ -11,7 +12,7 @@ const props = defineProps<{
 
 const router = useRouter()
 const goLink = () => {
-  router.push({ name: 'NtdAcctDash', params: { acct: btoa(props.acct) } })
+  router.push({ name: 'NtdAcctDash', params: { acct: encrypt(props.acct) } })
 }
 </script>
 

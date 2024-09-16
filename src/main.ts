@@ -6,6 +6,7 @@ import i18n from './locales'
 import App from './App.vue'
 import router from './router'
 import './index.css'
+import '@/assets/styles/global.css'
 
 const app = createApp(App)
 

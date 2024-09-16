@@ -65,6 +65,10 @@ export const accountRoutes: RouteRecord[] = [
     components: {
       header: () => import('@/components/layout/NavigationHeader.vue'),
       default: () => import('@/views/account/NtdAcctDash/NtdAcctDash.vue')
+    },
+    meta: {
+      requiresAuth: true,
+      transition: 'slide'
     }
   },
   {
@@ -81,11 +85,15 @@ export const accountRoutes: RouteRecord[] = [
     components: {
       header: () => import('@/components/layout/NavigationHeader.vue'),
       default: () => import('@/views/account/NtdAcctDetail/NtdAcctDetail.vue')
+    },
+    meta: {
+      requiresAuth: true,
+      transition: 'slide'
     }
   },
   {
     path: '/account/ntd-account/tran-detail/:data',
-    name: 'NtdTranDetail',
+    name: 'NtdTransDetail',
     props: {
       header: () => {
         const { t } = useI18n()
@@ -96,7 +104,50 @@ export const accountRoutes: RouteRecord[] = [
     },
     components: {
       header: () => import('@/components/layout/NavigationHeader.vue'),
-      default: () => import('@/views/account/NtdTranDetail/NtdTranDetail.vue')
+      default: () => import('@/views/account/NtdTransDetail/NtdTransDetail.vue')
+    },
+    meta: {
+      requiresAuth: true,
+      transition: 'slide'
+    }
+  },
+  {
+    path: '/account/ntd-transfer',
+    name: 'NtdTransfer',
+    redirect: { name: 'BankTrans' },
+    props: {
+      header: () => {
+        const { t } = useI18n()
+        return {
+          title: t('台幣轉帳')
+        }
+      }
+    },
+    components: {
+      header: () => import('@/components/layout/NavigationHeader.vue'),
+      default: () => import('@/views/account/NtdTransfer/NtdTransfer.vue')
+    },
+    children: [
+      {
+        path: 'bank-trans',
+        name: 'BankTrans',
+        redirect: { name: 'BankTransInput' },
+        component: () => import('@/views/account/NtdTransfer/BankTrans/BankTransLayout.vue'),
+        children: [
+          { path: 'input', name: 'BankTransInput', component: () => import('@/views/account/NtdTransfer/BankTrans/BankTransInput.vue') },
+          { path: 'confirm', name: 'BankTransConfirm', component: () => import('@/views/account/NtdTransfer/BankTrans/BankTransConfirm.vue') },
+          { path: 'result', name: 'BankTransResult', component: () => import('@/views/account/NtdTransfer/BankTrans/BankTransResult.vue') }
+        ]
+      },
+      {
+        path: 'mobile-trans',
+        name: 'MobileTrans',
+        component: () => import('@/views/account/NtdTransfer/MobileTrans/MobileTrans.vue')
+      }
+    ],
+    meta: {
+      requiresAuth: true,
+      transition: 'slide'
     }
   }
 ]

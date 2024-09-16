@@ -2,6 +2,7 @@
 import { ChevronRightIcon } from '@heroicons/vue/24/outline'
 import { useRouter } from 'vue-router'
 import { fmtMoney } from '@/utils'
+import { encrypt } from '@/utils'
 
 const props = defineProps<{
   date: string
@@ -17,7 +18,7 @@ const props = defineProps<{
 
 const router = useRouter()
 const goLink = () => {
-  router.push({ name: 'NtdTranDetail', params: { data: btoa(encodeURIComponent(JSON.stringify(props))) } })
+  router.push({ name: 'NtdTransDetail', params: { data: encrypt(JSON.stringify(props)) } })
 }
 </script>
 

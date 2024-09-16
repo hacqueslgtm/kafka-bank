@@ -1,11 +1,12 @@
 <script setup lang="ts">
 import { useRoute } from 'vue-router'
 import AcctInfo from './components/AcctInfo.vue'
-import TranLimit from './components/TranLimit.vue'
+import TranLimit from './components/TransLimit.vue'
+import { decrypt } from '@/utils'
 
 const route = useRoute()
 const acctParam = route.params.acct
-const acct = Array.isArray(acctParam) ? atob(acctParam[0]) : atob(acctParam)
+const acct = Array.isArray(acctParam) ? decrypt(acctParam[0]) : decrypt(acctParam)
 
 const acctInfo = {
   acct,

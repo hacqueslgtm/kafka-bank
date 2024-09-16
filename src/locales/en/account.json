@@ -33,9 +33,17 @@
   "轉帳說明": "Transfer Description",
   "日期": "Date",
   "金額": "Amount",
-  "轉出帳號": "From",
+  "轉出": "From",
+  "選擇轉出帳號": "Select From Account",
+  "轉入": "To",
+  "選擇銀行及帳號": "Select Bank & Account",
   "轉入帳號": "To",
   "轉入銀行": "To Bank",
+  "新增標籤": "Add Tag",
+  "新增備註": "Add Description",
   "類型": "Type",
-  "備註": "Description"
+  "備註": "Description",
+  "台幣轉帳": "NTD Transfer",
+  "銀行帳號轉帳": "Bank Account",
+  "手機號碼轉帳": "Mobile No."
 }

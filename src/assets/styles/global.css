@@ -1,0 +1,42 @@
+.swiper {
+  --swiper-navigation-color: #121417; /* 单独设置按钮颜色 */
+  --swiper-navigation-size: 20px; /* 设置按钮大小 */
+}
+
+.swiper .swiper-button-prev,
+.swiper .swiper-button-next {
+  opacity: 0.5;
+}
+
+.slide-enter-active,
+.slide-leave-active {
+  transition: all 0.3s ease;
+  /* position: absolute;
+  width: 100%; */
+}
+
+.slide-enter-from {
+  transform: translateX(100%);
+}
+
+.slide-enter-to {
+  transform: translateX(0);
+}
+
+.slide-leave-from {
+  transform: translateX(0);
+}
+
+.slide-leave-to {
+  transform: translateX(100%);
+}
+
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.3s;
+}
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+}
+

@@ -2,12 +2,13 @@
 import { useRoute, useRouter } from 'vue-router'
 import { EllipsisVerticalIcon } from '@heroicons/vue/24/outline'
 import BaseButton from '@/components/base/BaseButton.vue'
-import TranRecord from './components/TranRecord.vue'
+import TransRecord from './components/TransRecord.vue'
+import { decrypt, encrypt } from '@/utils'
 
 const route = useRoute()
 
 const acctParam = route.params.acct
-const acct = Array.isArray(acctParam) ? atob(acctParam[0]) : atob(acctParam)
+const acct = Array.isArray(acctParam) ? decrypt(acctParam[0]) : decrypt(acctParam)
 
 const tranRecord = [
   {
@@ -146,7 +147,7 @@ const tranRecord = [
 
 const router = useRouter()
 const goLink = () => {
-  router.push({ name: 'NtdAcctDetail', params: { id: btoa(acct) } })
+  router.push({ name: 'NtdAcctDetail', params: { id: encrypt(acct) } })
 }
 </script>
 
@@ -171,7 +172,7 @@ const goLink = () => {
       <h1 class="mb-4 text-2xl font-bold">{{ $t('轉帳明細') }}</h1>
       <!-- TODO 篩選功能 照月份篩選 及 轉出/轉入 如果是當月份的話要及時打交易 其他月份可以存起來-->
       <!-- TODO 一次查詢一個月 下滑到最下面自動打下一個月的交易 要有loading動畫 -->
-      <TranRecord v-for="(record, index) in tranRecord" :key="index" v-bind="record" />
+      <TransRecord v-for="(record, index) in tranRecord" :key="index" v-bind="record" />
     </section>
   </div>
 </template>

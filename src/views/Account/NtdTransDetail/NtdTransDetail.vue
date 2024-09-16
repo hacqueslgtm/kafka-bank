@@ -1,14 +1,15 @@
 <script setup lang="ts">
 import { useRoute } from 'vue-router'
-import type { NtdTranInfo } from '@/types/tran.types'
+import type { NtdTransInfo } from '@/types/trans.types'
 import { fmtMoney } from '@/utils'
 import { computed } from 'vue'
+import { decrypt } from '@/utils'
 
 const route = useRoute()
 
 const dataParam = route.params.data as string
 
-const info: NtdTranInfo = JSON.parse(decodeURIComponent(atob(dataParam)))
+const info: NtdTransInfo = JSON.parse(decrypt(dataParam))
 
 const tranDetails = computed(() => [
   { label: '日期', value: info.date },

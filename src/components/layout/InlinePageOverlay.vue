@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import { XMarkIcon } from '@heroicons/vue/24/outline'
-import FadeTransition from '@/components/transition/FadeTransition.vue'
 const props = defineProps<{
   title: string
 }>()

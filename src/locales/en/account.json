@@ -34,6 +34,7 @@
   "日期": "Date",
   "金額": "Amount",
   "轉出": "From",
+  "轉出帳號": "From",
   "選擇轉出帳號": "Select From Account",
   "轉入": "To",
   "選擇銀行及帳號": "Select Bank & Account",

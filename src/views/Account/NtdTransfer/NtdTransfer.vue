@@ -1,10 +1,10 @@
 <script setup lang="ts">
-import AcctNav from './components/AcctNav.vue'
+import TranNav from './components/TranNav.vue'
 </script>
 
 <template>
-  <AcctNav />
-  <div class="flex h-full flex-col overflow-auto">
+  <div>
+    <TranNav />
     <RouterView v-slot="{ Component }">
       <Component :is="Component" />
     </RouterView>

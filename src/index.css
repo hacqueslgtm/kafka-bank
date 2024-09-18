@@ -22,15 +22,5 @@
   .custom-swiper-pagination .swiper-pagination-bullet-active {
     @apply bg-black;
   }
-
-  .swiper {
-    --swiper-navigation-color: #121417; /* 单独设置按钮颜色 */
-    --swiper-navigation-size: 20px; /* 设置按钮大小 */
-  }
-
-  .swiper .swiper-button-prev,
-  .swiper .swiper-button-next {
-    opacity: 0.5;
-  }
 }
 

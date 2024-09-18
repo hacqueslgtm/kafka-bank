@@ -9,7 +9,7 @@ const linkList = [
     icon: ArrowUpRightIcon,
     title: '向朋友轉帳',
     subtitle: '簡單又免費',
-    path: 'Transfer'
+    path: 'NtdTransfer'
   },
   {
     icon: ArrowDownTrayIcon,
